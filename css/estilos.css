@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 70px;
+  background:#4b5454;
+  width: 100%;
+}
+.nav{
+  display: flex ;
+  justify-content: space-between;
+}
+.nav-linkk{
+  text-decoration: none;
+}
+.logo{
+  font-size: 20px;
+  color: white;
+  padding: 0 60px;
+  line-height: 70px;
+}
+.nav-menu{
+  display: flex;
+  margin-right: 70px;
+  list-style:none;
+}
+.nav-menu-item{
+  font-size: 17px;
+  margin: 0 10px;
+  line-height: 70px;
+  width: max-content;
+}
+.nav-menu-link{
+  padding: 4px 4px;
+  border-radius: 3px;
+}
+.nav-menu-link:hover {
+  background-color: white;
+}
+/*Carrusel*/
+.home .carousel-item{
+  min-height: 70vh;
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.home .carousel-item::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.3);
+  z-index: -1;
+}
+.home .carousel-item .contenedor{
+  
+  position:absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-10%,12%);
+  text-align: right;
+}
+.home .carousel-item h1{
+  font-size: 25px;
+  color: white;
+}
+.home .carousel-item p{
+  font-size: 15px;
+  color: #eeeeee;
+  text-align: right;
+}
+
+.fw-light{
+  margin: 10px 1px;
+  text-align: center;
+  font-size: 12px;
+}
+.fw-bold{
+  margin: 0.5px 2px;
+  text-align: center;
+  font-size: 25px;
+}
+footer{
+  background-color: rgb(17, 58, 83);
+  height: 70px;
+  
+}
+footer nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer nav a{
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+}
